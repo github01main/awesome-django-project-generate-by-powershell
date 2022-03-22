@@ -1,4 +1,4 @@
-# awesome-django-project-generate-by-powershell-installer
+# awesome-django-project-generate-powershell
 
 This is your description of your django project .. this is your demo web site link: [your official website](https://google.com)
 
