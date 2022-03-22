@@ -1,3 +1,69 @@
+$hellowthere=@'
+,,,,,,,,,,,,,,,,,,,,,,,,,/////(//((((((((#######(///***....,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,*////((((((((((##(((((((///**,,....,,,,,,,,,,,,,*,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,*///((((((((((###(#((((///**,,,... ,,,,,,.,,*****,,,,,,,
+,,,,,,,*,*,*****,,,,,,,,///((((((((((####((((((//***,,,,**,,,,.,,,,*********,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,*//((((((((((####((/(((////*,,,*,.(#,,,,,*************,,
+,,,,,,,,,,,,,,,,,,,,,,,,*,,,,,*/(((/***,,**//*//////*,,,,*,**,,,*************,,,
+,,,,,,,,,,,,,,,,,,,,,,,,**//////((((////(((/////////*,,***//*.*****************,
+,,*,,,,,,,,,,,,,,,,,,,,,*,,,.**///(((//**,,**//(////**,,**//********************
+,,,,,,,,,,,,,,,,,,,,,,,*///*//////((((/((///((((((//*,,,*///,*******************
+,,,,,,,,,,,,,,,,,,,,,,,,////((////((((//(#####((((//****/((/((*************,,***
+,***********,,,,,,,,,,,,*//((////((/(((///((((((((///////,,,/(%&#/**********,,*,
+,**************,,,,,,,,,,*//*,..,.,,,..,,,,,///(((///////,.*/#%%&&&&%(/*********
+,,,,*******,*,,,,,,,*/#%((*//.,,,,***,****,,,*((////////*,,*/(###%%&&&&&@&@&%(*,
+,,,,,********#%#%%##%#%#/*(///**.......,//*(//(////////*,**/(##&%#(#%&%&&&&&&%&&
+,,,,****/##%##%##%#%%####****////*///**#(((//((/(////*****/(((#%(((#%#%%%%%%%%&&
+,,,,*/###((%#%%###((##((((//..*///////((((((((/(///******(((((#((((#########%#%%
+,,*((#(#(((((#((((((((((((/*.*.*/////((((((((///*****/**(((((((/(####(##(##(####
+,(((#(##(#(/(#((((((((((((////*.*///(((((((////****/**((((((((((((((#(((#((#((((
+
+'@
+Write-Host $hellowthere`n
+Write-Host ---------------------------------------------------------------------
+Write-Host bat name : Awesome-django-project-generate-start-tool-kit.
+Write-Host Author   : Anonymous
+Write-Host version  : $date
+Write-Host index    :
+Write-Host            [1] batches, settings 폴더를 생성합니다.
+Write-Host            [2] 장고서버 베이스 쉘 스크립트들을 생성합니다.
+Write-Host            [3] 깃-허브 베이스 쉘 스크립트들을 생성합니다.
+Write-Host            [4] 장고 및 깃 접근 쉘 스크립트들을 생성합니다.
+Write-Host            [5] 프로젝트 폴더 내에 패키지들을 Requirements.txt에 담아 생성합니다.
+Write-Host            [6] .gitinore 파일을 생성합니다.
+Write-Host            [7] README.md 파일을 생성합니다.
+Write-Host            [8] LICENSE 파일을 생성합니다.
+Write-Host            [9] 장고 프로젝트를 생성합니다.
+Write-Host            [10] 장고 프로젝트 앱 생성기를 생성합니다.
+Write-Host            [11] html css js templates sources generator.
+Write-Host            [12] setting up os, templates, static for django project.
+Write-Host            [13] start and procceed project creator.
+Write-Host            [14] bundle pack 첫번째 bundle-pack-scoop-installer 를 생성합니다.
+Write-Host            [15] bundle pack 두번째 bundle-pack-ssh-key-generator 를 생성합니다.
+Write-Host            [16] bundle pack 세번째 bundle-pack-git-setup 를 생성합니다.
+Write-Host            [17] bundle pack 네번째 Goodbye 클리너를 생성합니다.
+Write-Host            [18] 원격에 repogitory를 생성합니다.
+Write-Host            [19] 생성된 원격 리포지토리를 browser로 엽니다.
+Write-Host ---------------------------------------------------------------------
+
+timeout 2
+
+do{
+    $ans = Read-Host 'Awesome-django-porject_generator을 실행하기 위해 CurrentUser가 Unrestricted 되어있습니까? (Y/N)'
+    if($ans -eq 'N'){ exit }
+}
+until($ans -eq 'Y')
+
+timeout 30
+
+[string] $my_new_project_name_string = -join ((48..57) + (97..122) | Get-Random -Count 10 | % {[char]$_})
+[string] $my_new_project_name_number =  Get-Random
+[string] $my_new_project_combined_name = $my_new_project_name_string + '_' +$my_new_project_name_number
+
+New-Item -Path ".\$my_new_project_combined_name" -ItemType "directory" > $null # utils folder.
+
+cd .\$my_new_project_combined_name
+
 pipenv --python 3
 pipenv install django lxml
 
@@ -6,6 +72,7 @@ pipenv install django lxml
 # https://m.blog.naver.com/gyul611/222194321084 한글꺠짐현상 제거.
 # https://www.youtube.com/watch?v=S2syBlpz_4k hub craete tutorial
 # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/
+
 # 터미널 UTF-8 설정하기.
 $env:LC_ALL='C.UTF-8'
 [System.Console]::InputEncoding = [System.Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -16,18 +83,6 @@ $generator={
 [string] $date = Get-Date -format "yyyyMMdd"
 [string] $current_location_name = Split-Path -Path (Get-Location) -Leaf
 [string] $project_name = "토마스"
-
-Write-Host --------------------------------------------
-Write-Host bat name : Awesome-django-project-creator-start-tool-kit.
-Write-Host version  : $date
-Write-Host index    :
-Write-Host            1. Create django shell scripts [ join.ps1, run.ps1, out.ps1 ]
-Write-Host            2. Create git-hub shell scripts [ pull.ps1, push.ps1 ]
-Write-Host            3. Create folder access shell scripts [ access_django.ps1, access_git.ps1 ]
-Write-Host            4. Create access folders [ access_django_dir.ps1, access_git_dir.ps1 ]
-Write-Host --------------------------------------------
-
-timeout 5
 
 #region [1] batches, settings 폴더를 생성합니다.
 Write-Host [1] batches, settings 폴더를 생성합니다. # | OUT-NULL대신 > $null을 쓴다 왜하냐하면 전자는 Overhead가 60%인 반면 $null은 0.3%이기 때문이다.
@@ -509,8 +564,7 @@ $content | Set-Content -Path $file
 #endregion
 New-Item -Path ".\awesome-project-creator.ps1" -ItemType "file" -Value $generator.ToString() > $null
 #endregion
-#region [13] pipenv shell start and procceed project creator.
-pipenv shell
+#region [13] start and procceed project creator.
 .\awesome-project-creator.ps1 /Quick
 #endregion
 Write-Host [14] bundle pack 첫번째 bundle-pack-scoop-installer 를 생성합니다.
@@ -530,7 +584,7 @@ Write-Host [3] 허브를 설치 합니다.
 scoop install hub
 '@
 
-New-Item -Path ".\bundle-pack-scoop-installer.ps1" -ItemType "file" -Value $scoop_installer.ToString() > $null
+New-Item -Path ".\utils\helper\bundle-pack-scoop-installer.ps1" -ItemType "file" -Value $scoop_installer.ToString() > $null
 
 Write-Host [15] bundle pack 두번째 bundle-pack-ssh-key-generator 를 생성합니다.
 
@@ -553,7 +607,7 @@ Write-Host [3] 생성된 공개키를 https://github.com/settings/keys 에 입�
 #ssh -T git@github.com
 '@
 
-New-Item -Path ".\bundle-pack-ssh-key-generator.ps1" -ItemType "file" -Value $ssh_key_gen.ToString() > $null
+New-Item -Path ".\utils\helper\bundle-pack-ssh-key-generator.ps1" -ItemType "file" -Value $ssh_key_gen.ToString() > $null
 
 Write-Host [16] bundle pack 세번째 bundle-pack-git-setup 를 생성합니다.
 
@@ -580,14 +634,14 @@ Write-Host [3] Git 출력되는 명령어의 색깔 Auto로 설정합니다.
 git config --global color.ui auto
 '@
 
-New-Item -Path ".\bundle-pack-git-setup.ps1" -ItemType "file" -Value $git_setup.ToString() > $null
+New-Item -Path ".\utils\helper\bundle-pack-git-setup.ps1" -ItemType "file" -Value $git_setup.ToString() > $null
 
-Write-Host [17] bundle pack 네번째 Goodbye 클리너를 생성합니다
+Write-Host [17] bundle pack 네번째 Goodbye 클리너를 생성합니다.
 $repo_cleaner=@'
 [string] $current_location_name = Split-Path -Path (Get-Location) -Leaf
 hub delete github01@main/$current_location_name
 '@
-New-Item -Path ".\bundle-pack-goodbye_cleaner.ps1" -ItemType "file" -Value $repo_cleaner.ToString() > $null
+New-Item -Path ".\utils\helper\bundle-pack-goodbye_cleaner.ps1" -ItemType "file" -Value $repo_cleaner.ToString() > $null
 
 # 장고 Urls 패턴 추가본..
 $urls_file = ".\config\urls.py"
@@ -601,17 +655,18 @@ $urls_content | Set-Content -Path $urls_file
 
 Write-Host [18] 원격에 repogitory를 생성합니다.
 
+git init
 hub create
 
-git init
 git rm -r --cached .
 git add -A
 git commit -m "your new repogitory is maded ! :) have a nice day."
-[string] $git_hub_name = Split-Path -Path (Get-Location) -Leaf
-git remote add origin git@github.com:github01main/$git_hub_name.git
+git remote add origin git@github.com:github01main/$my_new_project_combined_name.git
 git branch -M main
 git push -u origin main
 
 Write-Host [19] 생성된 원격 리포지토리를 browser로 엽니다.
 hub browse
 hub browse -- issues
+
+pipenv shell
