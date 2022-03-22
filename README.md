@@ -1,6 +1,6 @@
 # awesome-django-project-generate-with-powershell
 
-This is your description of your django project .. this is your demo web site link: [your official website](https://google.com)
+사용 하기 앞서 초기 셋업이 필요합니다 먼저 우측 링크를 따라 그대로 따라하시면 됩니다. : [HOW TO USE](https://google.com)
 
 ## Features
 
