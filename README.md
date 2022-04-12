@@ -10,11 +10,9 @@
 
 ### 사용방법
 * 로컬에 초기 파워쉘에 대한 규정이 서명 된스크립트만 허용이 되어있다면 unregistricted로 변경해주셔야합니다.
+* 파워쉘 버전을 최신화 시켜 사용하길 권장합니다. 현재 버전 7.x (하위 서브 버전은 무관 경험적인 버전은 사용하지 말것)
 
-If you are instead looking for a [Python application](https://caremad.io/posts/2013/07/setup-vs-requirement/) template, check out one of the sibling projects:
-
-* [jacebrowning/template-django](https://github.com/jacebrowning/template-django)
-* [jacebrowning/template-flask](https://github.com/jacebrowning/template-flask)
+자동화 프로그램에 대해 더 알고 싶으시다면 [powershell 7.2](https://docs.microsoft.com/ko-kr/powershell/scripting/whats-new/what-s-new-in-powershell-72?view=powershell-7.2) template, check out one of the sibling projects:
 
 ## Examples
 
