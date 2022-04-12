@@ -24,13 +24,16 @@
 * [ohmyposh](https://ohmyposh.dev/docs) 로컬 PC 터미널 공간을 꾸며준다 지극히 커스터마이징 용임으로 클라이언트의 미적감각이 요구된다.
 * [Terminal-Icons](https://github.com/devblackops/Terminal-Icons) 폴더 아이콘을 터미널 공간에서 유저에게 시각적으로 제공해준다. * 눈요기로만 좋다. 소량의 메모리를 잡아먹는다.
 
-## Usage
+## CLI Usage
 
-Install `cookiecutter` and generate a project:
+본인 Local에 설치된 `powershell` 을 실행시킨다 :
 
-```python
-pip install cookiecutter
-cookiecutter gh:jacebrowning/template-python -f
+```powershell
+
+# 웬만하면 바탕화면을 entry로 시작하는게 좋다.
+
+awesome-django-project_generator.ps1
+
 ```
 
 Cookiecutter will ask you for some basic info (your name, project name, python package name, etc.) and generate a base Python project for you.
