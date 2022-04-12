@@ -18,8 +18,8 @@
 
 몇몇개의 유용한 모듈들을 공유합니다 :
 
-* [jacebrowning/minilog](https://github.com/jacebrowning/minilog)
-* [theovoss/Chess](https://github.com/theovoss/Chess)
+* [z-jumper](https://github.com/rupa/z) 유저가 접근했던 폴더의 히스토리를 바탕으로 단순 CLI를 통해 해당 폴더 공간으로 점프시키는 프로그램.
+* [PsReadLine 2.2.x](https://docs.microsoft.com/ko-kr/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2) 터미널 입력을 바탕으로 다양한 제어 접근을 유저에게 제공하고 발빠른 작업을 수행하도록 도와주는 프로그램.
 * [sprout42/StarStruct](https://github.com/sprout42/StarStruct)
 * [MichiganLabs/flask-gcm](https://github.com/MichiganLabs/flask-gcm)
 * [flask-restful/flask-restful](https://github.com/flask-restful/flask-restful)
