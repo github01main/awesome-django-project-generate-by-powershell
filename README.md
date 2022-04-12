@@ -2,9 +2,9 @@
 
 ## 쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드.
 
-## Features
+## 목적의도
 
-* Preconfigured setup for CI, coverage, and analysis services
+* 매번 프로젝트와 앱을 생성하는 불편함과 새로 settings
 * `pyproject.toml` for managing dependencies and package metadata
 * `Makefile` for automating common [development tasks](https://github.com/jacebrowning/template-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/CONTRIBUTING.md):
     - Installing dependencies with `poetry`
