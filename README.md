@@ -1,8 +1,6 @@
 # awesome-django-project-generate-by-powershell
 
-### -----------------------------------------------------
-
-쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드 라인
+## 쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드 라인
 
 ## Features
 
