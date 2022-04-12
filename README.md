@@ -14,9 +14,9 @@
 
 파워쉘 자동화 프로그램에 대해 더 알고 싶으시다면 [ PowerShell 7.2의 새로운 기능! ](https://docs.microsoft.com/ko-kr/powershell/scripting/whats-new/what-s-new-in-powershell-72?view=powershell-7.2) 을 참조 하시면됩니다.
 
-## Examples
+## 파워쉘을 사용하면서 사용하기 좋은 모듈들.
 
-Here are a few sample projects based on this template:
+몇몇개의 유용한 모듈들을 공유합니다 :
 
 * [jacebrowning/minilog](https://github.com/jacebrowning/minilog)
 * [theovoss/Chess](https://github.com/theovoss/Chess)
