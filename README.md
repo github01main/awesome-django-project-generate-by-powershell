@@ -2,6 +2,18 @@
 
 ### 쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드.
 
+## CLI Usage
+
+본인 Local에 설치된 `powershell` 을 실행시킨다... :
+
+```powershell
+
+# 웬만하면 바탕화면을 entry로 시작하는게 좋다.
+
+Desktop\awesome-django-project_generator.ps1
+
+```
+
 #### 권장사용 의도
 
 * 장고서버를 통한 웹사이트 구현을 목표를 의도로 두어야한다.
@@ -29,15 +41,3 @@
 * [PsReadLine 2.2.x](https://docs.microsoft.com/ko-kr/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2) 터미널 입력을 바탕으로 다양한 제어 접근을 유저에게 제공하고 발빠른 작업을 수행하도록 도와주는 프로그램.
 * [ohmyposh](https://ohmyposh.dev/docs) 로컬 PC 터미널 공간을 꾸며준다 지극히 커스터마이징 용임으로 클라이언트의 미적감각이 요구된다.
 * [Terminal-Icons](https://github.com/devblackops/Terminal-Icons) 폴더 아이콘을 터미널 공간에서 유저에게 시각적으로 제공해준다. * 눈요기로만 좋다. 소량의 메모리를 잡아먹는다.
-
-## CLI Usage
-
-본인 Local에 설치된 `powershell` 을 실행시킨다... :
-
-```powershell
-
-# 웬만하면 바탕화면을 entry로 시작하는게 좋다.
-
-Desktop\awesome-django-project_generator.ps1
-
-```
