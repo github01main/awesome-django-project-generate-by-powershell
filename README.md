@@ -32,7 +32,7 @@
 
 # 웬만하면 바탕화면을 entry로 시작하는게 좋다.
 
-awesome-django-project_generator.ps1
+Desktop\awesome-django-project_generator.ps1
 
 ```
 
