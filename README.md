@@ -1,8 +1,8 @@
-## awesome-django-project-generate-by-powershell
+# awesome-django-project-generate-by-powershell
 
-### 쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드.
+## 쩔어주는 장고 프로젝트 생성기 by powershell 사용 가이드.
 
-## CLI Usage
+### CLI Usage
 
 본인 Local에 설치된 `powershell` 을 실행시킨다... :
 
@@ -14,18 +14,18 @@ Desktop\awesome-django-project_generator.ps1
 
 ```
 
-#### 권장사용 의도
+### 권장사용 의도
 
 * 장고서버를 통한 웹사이트 구현을 목표를 의도로 두어야한다.
 * 자동화 프로그램 파일에 최적화된 파워쉘을 통해 업무시간을 단축하려는 의도를 두어야한다.
 
-#### 목적의도
+### 목적의도
 
 * 매번 프로젝트와 앱을 생성하는 불편함과 새로 `settings.py`, `urls.py`에 생성된 앱에 대한 정보가 자동 기입 되도록 매크로를 제작하였습니다. 사용 방법에 대해서는 아래내용을 참조하시며 사용하시면 됩니다.
 * 첫 제작 당시 외부용도가 아닌 지극히 팀 프로젝트를 하며 매번 반복되는 동작을 매크로화 시키는데에 목표를 두고 만들었습니다.
 * 단순함에 초점을 바탕으로 두고 `awesome-django-project_generator.ps1` 파일만 실행 시키기만하면 자동으로 프로젝트 폴더생성부터 리포지토리까지 구성해줍니다.
 
-#### 사용방법
+### 사용방법
 
 * 파이썬 패키지 매니저 모듈인 pipenv를 해당 버전에 맞게 전역설치로 하길 권장합니다.
 * 로컬에 초기 파워쉘에 대한 규정이 서명 된스크립트만 허용이 되어있다면 unregistricted로 변경해주셔야합니다.
@@ -33,7 +33,7 @@ Desktop\awesome-django-project_generator.ps1
 
 파워쉘 자동화 프로그램에 대해 더 알고 싶으시다면 [ PowerShell 7.2의 새로운 기능! ](https://docs.microsoft.com/ko-kr/powershell/scripting/whats-new/what-s-new-in-powershell-72?view=powershell-7.2) 을 참조 하시면됩니다.
 
-### 파워쉘을 사용하면서 사용하기 좋은 모듈들.
+## 파워쉘을 사용하면서 사용하기 좋은 모듈들.
 
 몇몇개의 유용한 모듈들을 공유합니다 :
 
